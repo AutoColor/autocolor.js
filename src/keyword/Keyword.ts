@@ -4,7 +4,7 @@ import chalk from "chalk";
 export default abstract class Keyword {
   readonly color: Chalk;
   abstract shouldMatch: string[];
-  abstract shouldNotMatch: string[]
+  abstract shouldNotMatch: string[];
 
   constructor() {
     this.color = chalk;

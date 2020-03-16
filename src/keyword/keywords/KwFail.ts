@@ -2,7 +2,7 @@ import Keyword from "../Keyword";
 
 export default class KwFail extends Keyword {
   shouldMatch = ["fail", "Fail"];
-  shouldNotMatch = ["fai"]
+  shouldNotMatch = ["fai"];
   check(name: string): boolean {
     return name.toLowerCase() === "fail";
   }

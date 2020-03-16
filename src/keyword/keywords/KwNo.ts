@@ -2,7 +2,7 @@ import Keyword from "../Keyword";
 
 export default class KwNo extends Keyword {
   shouldMatch = ["no", "No"];
-  shouldNotMatch = ["nope", "none"]
+  shouldNotMatch = ["nope", "none"];
   check(name: string): boolean {
     return name.toLowerCase() === "no";
   }

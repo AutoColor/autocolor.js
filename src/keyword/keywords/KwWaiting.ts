@@ -2,7 +2,7 @@ import Keyword from "../Keyword";
 
 export default class KwWaiting extends Keyword {
   shouldMatch = ["waiting", "Waiting"];
-  shouldNotMatch = ["wait", "watingg"]
+  shouldNotMatch = ["wait", "watingg"];
   check(name: string): boolean {
     return name.toLowerCase() === "waiting";
   }

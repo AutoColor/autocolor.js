@@ -2,7 +2,7 @@ import Keyword from "../Keyword";
 
 export default class KwYes extends Keyword {
   shouldMatch = ["yes", "Yes"];
-  shouldNotMatch = ["ye", "yess"]
+  shouldNotMatch = ["ye", "yess"];
   check(name: string): boolean {
     return name.toLowerCase() === "yes";
   }

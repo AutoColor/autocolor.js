@@ -2,7 +2,7 @@ import Keyword from "../Keyword";
 
 export default class KwDenied extends Keyword {
   shouldMatch = ["denied", "Denied"];
-  shouldNotMatch = ["deny", "denie"]
+  shouldNotMatch = ["deny", "denie"];
   check(name: string): boolean {
     return name.toLowerCase() === "denied";
   }
