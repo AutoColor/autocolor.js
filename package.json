@@ -1,6 +1,6 @@
 {
   "name": "autocolor.js",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "Automatically colors your output!",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
