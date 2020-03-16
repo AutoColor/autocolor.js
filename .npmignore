@@ -1,0 +1,16 @@
+# Don't uploads these files to save size
+.vscode/
+src/
+test/
+.github/
+
+.travis.yml
+jest.config.js
+tsconfig.json
+tsconfig.module.json
+
+# Standard Node ignore
+.nyc_output
+*.log
+**/*.spec.*
+coverage
