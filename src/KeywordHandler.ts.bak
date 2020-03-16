@@ -1,0 +1,22 @@
+import chalk from 'chalk'
+import isIp from 'ip-regex'
+
+export default class KeywordHandler {
+  static getString (input: string): string {
+    const parts = input.split(' ')
+    let out = ''
+
+    parts.forEach(part => {
+      // Keyword equal checks
+      // Special checks
+      else if (isIp().test(part)) out += chalk.magentaBright(part)
+      else out += part
+
+      out += ' '
+    })
+
+    return out
+  }
+
+  getKeyword()
+}
