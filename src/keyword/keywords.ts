@@ -27,6 +27,7 @@ import KwWaiting from "./keywords/KwWaiting"
 import KwWarningWithColon from "./keywords/KwWarningWithColon"
 import KwYellow from "./keywords/KwYellow"
 import KwYes from "./keywords/KwYes"
+import KwIpAddress from "./keywords/KwIpAddress"
 
 export default class Keywords {
   private static registeredKeywords: Keyword[] = [
@@ -43,6 +44,7 @@ export default class Keywords {
     new KwGreen,
     new KwInfo,
     new KwInfoWithColon,
+    new KwIpAddress,
     new KwMagenta,
     new KwNo,
     new KwNotice,
