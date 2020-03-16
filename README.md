@@ -1,0 +1,1 @@
+# autocolor.js
