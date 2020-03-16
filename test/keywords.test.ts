@@ -1,5 +1,5 @@
 import Keywords from '../src/keyword/keywords'
-import AutoColor from '../src'
+import * as AutoColor from '../src'
 
 for (const keyword of Keywords.getRegistered()) {
   /**

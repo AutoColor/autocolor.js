@@ -1,39 +1,37 @@
 import KeywordHandler from "./KeywordHandler";
 
-export default class AutoColor {
-  static getString(text: string): string {
+  export function getString(text: string): string {
     return KeywordHandler.getString(text);
   }
 
-  static log(text: string, ...optionalParams: readonly any[]) {
+  export function log(text: string, ...optionalParams: readonly any[]) {
     if (optionalParams.length >= 1) {
-      console.log(this.getString(text), optionalParams);
+      console.log(getString(text), optionalParams);
     } else {
-      console.log(this.getString(text));
+      console.log(getString(text));
     }
   }
 
-  static error(text: string, ...optionalParams: readonly any[]) {
+  export function error(text: string, ...optionalParams: readonly any[]) {
     if (optionalParams.length >= 1) {
-      console.error(this.getString(text), optionalParams);
+      console.error(getString(text), optionalParams);
     } else {
-      console.error(this.getString(text));
+      console.error(getString(text));
     }
   }
 
-  static warn(text: string, ...optionalParams: readonly any[]) {
+  export function warn(text: string, ...optionalParams: readonly any[]) {
     if (optionalParams.length >= 1) {
-      console.warn(this.getString(text), optionalParams);
+      console.warn(getString(text), optionalParams);
     } else {
-      console.warn(this.getString(text));
+      console.warn(getString(text));
     }
   }
 
-  static debug(text: string, ...optionalParams: readonly any[]) {
+  export function debug(text: string, ...optionalParams: readonly any[]) {
     if (optionalParams.length >= 1) {
-      console.debug(this.getString(text), optionalParams);
+      console.debug(getString(text), optionalParams);
     } else {
-      console.debug(this.getString(text));
+      console.debug(getString(text));
     }
   }
-}
