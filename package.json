@@ -47,9 +47,9 @@
   "author": "USER",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/USER/PROJECT/issues"
+    "url": "https://github.com/AutoColor/autocolor.js/issues"
   },
-  "homepage": "https://github.com/USER/PROJECT#readme",
+  "homepage": "https://github.com/AutoColor/autocolor.js#readme",
   "devDependencies": {
     "@bitjson/npm-scripts-info": "^1.0.0",
     "@bitjson/typedoc": "^0.15.0-0",
