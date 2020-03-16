@@ -1,8 +1,10 @@
 {
-  "name": "name",
-  "version": "0.0.1",
-  "description": "Description",
-  "main": "dist/index.js",
+  "name": "autocolor.js",
+  "version": "0.0.11",
+  "description": "Automatically colors your output!",
+  "main": "build/main/index.js",
+  "typings": "build/main/index.d.ts",
+  "module": "build/module/index.js",
   "scripts": {
     "describe": "npm-scripts-info",
     "build": "run-s clean && run-p build:*",
@@ -36,7 +38,12 @@
     "type": "git",
     "url": "git+https://github.com/USER/PROJECT.git"
   },
-  "keywords": [],
+  "keywords": [
+    "autocolor",
+    "automate",
+    "color",
+    "cli"
+  ],
   "author": "USER",
   "license": "MIT",
   "bugs": {
@@ -60,5 +67,9 @@
     "ts-jest": "^25.2.1",
     "ts-node": "^8.6.2",
     "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "ip-regex": "^4.1.0"
   }
 }
