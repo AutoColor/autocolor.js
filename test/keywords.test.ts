@@ -10,6 +10,11 @@ for (const keyword of Keywords.getRegistered()) {
       expect(AutoColor.getString(match).trimRight()).not.toBe(match)
     })
 
+    test(`String should change: ${match}`, () => {
+      let str = `Hello ${match} World!`
+      expect(AutoColor.getString(str).trimRight()).not.toBe(str)
+    })
+
     test(`Keyword should check: ${match}`, () => {
       expect(keyword.check(match)).toBe(true)
     })
