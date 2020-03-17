@@ -1,10 +1,11 @@
 import Keyword from "../Keyword";
 
 export default class KwReject extends Keyword {
-  shouldMatch = ["reject", "Reject"];
+  shouldMatch = ["reject", "Reject", "rejected", "Rejected"];
   shouldNotMatch = ["rejec"];
   check(input: string): boolean {
-    return input.toLowerCase() === "reject";
+    input = input.toLowerCase()
+    return input === "reject" || input === "rejected";
   }
 
   getColored(input: string): string {

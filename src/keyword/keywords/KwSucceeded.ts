@@ -1,10 +1,11 @@
 import Keyword from "../Keyword";
 
 export default class KwSucceeded extends Keyword {
-  shouldMatch = ["succeeded", "Succeeded"];
+  shouldMatch = ["succeeded", "Succeeded", "succeed", "Succeed"];
   shouldNotMatch = ["success"];
   check(input: string): boolean {
-    return input.toLowerCase() === "succeeded";
+    input = input.toLowerCase()
+    return input === "succeeded" || input === "succeed";
   }
 
   getColored(input: string): string {
