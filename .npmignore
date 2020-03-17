@@ -4,10 +4,14 @@ src/
 test/
 .github/
 
+.editorconfig
+.prettierignore
 .travis.yml
+CODE_OF_CONDUCT.md
 jest.config.js
 tsconfig.json
 tsconfig.module.json
+
 
 # Standard Node ignore
 .nyc_output
