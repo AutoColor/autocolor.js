@@ -5,7 +5,7 @@ export default class KwAccept extends Keyword {
   shouldNotMatch = ["acccept"];
 
   check(input: string): boolean {
-    input = input.toLowerCase()
+    input = input.toLowerCase();
     return input === "accept" || input === "accepted";
   }
 

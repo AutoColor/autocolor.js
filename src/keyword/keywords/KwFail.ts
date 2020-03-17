@@ -4,7 +4,7 @@ export default class KwFail extends Keyword {
   shouldMatch = ["fail", "Fail", "failed", "Failed"];
   shouldNotMatch = ["fai"];
   check(input: string): boolean {
-    input = input.toLowerCase()
+    input = input.toLowerCase();
     return input === "fail" || input === "failed";
   }
 

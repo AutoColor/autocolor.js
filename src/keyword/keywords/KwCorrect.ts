@@ -4,7 +4,7 @@ export default class KwCorrect extends Keyword {
   shouldMatch = ["correct", "Correct", "corrected", "Corrected"];
   shouldNotMatch = ["corect"];
   check(input: string): boolean {
-    input = input.toLowerCase()
+    input = input.toLowerCase();
     return input === "correct" || input === "corrected";
   }
 

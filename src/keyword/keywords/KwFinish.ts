@@ -4,7 +4,7 @@ export default class KwFinish extends Keyword {
   shouldMatch = ["finish", "Finish", "finished", "Finished"];
   shouldNotMatch = ["finis"];
   check(input: string): boolean {
-    input = input.toLowerCase()
+    input = input.toLowerCase();
     return input === "finish" || input === "finished";
   }
 

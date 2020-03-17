@@ -4,7 +4,7 @@ export default class KwDelete extends Keyword {
   shouldMatch = ["delete", "Delete", "deleted", "Deleted"];
   shouldNotMatch = ["delet"];
   check(input: string): boolean {
-    input = input.toLowerCase()
+    input = input.toLowerCase();
     return input === "delete" || input === "deleted";
   }
 

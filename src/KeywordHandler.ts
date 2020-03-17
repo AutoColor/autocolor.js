@@ -21,7 +21,7 @@ export default class KeywordHandler {
       out += " ";
     });
 
-    out = out.slice(0, -1)
+    out = out.slice(0, -1);
     return out;
   }
 }

@@ -4,7 +4,7 @@ export default class KwError extends Keyword {
   shouldMatch = ["error", "Error", "errored", "Errored"];
   shouldNotMatch = ["errror"];
   check(input: string): boolean {
-    input = input.toLowerCase()
+    input = input.toLowerCase();
     return input === "error" || input == "errored";
   }
 

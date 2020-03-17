@@ -27,7 +27,7 @@ import KwWarningWithColon from "./keywords/KwWarningWithColon";
 import KwYellow from "./keywords/KwYellow";
 import KwYes from "./keywords/KwYes";
 import KwIpAddress from "./keywords/KwIpAddress";
-import KwFinish from "./keywords/KwFinish"
+import KwFinish from "./keywords/KwFinish";
 
 export default class Keywords {
   private static registeredKeywords: Keyword[] = [

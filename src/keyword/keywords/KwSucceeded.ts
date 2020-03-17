@@ -4,7 +4,7 @@ export default class KwSucceeded extends Keyword {
   shouldMatch = ["succeeded", "Succeeded", "succeed", "Succeed"];
   shouldNotMatch = ["success"];
   check(input: string): boolean {
-    input = input.toLowerCase()
+    input = input.toLowerCase();
     return input === "succeeded" || input === "succeed";
   }
 
