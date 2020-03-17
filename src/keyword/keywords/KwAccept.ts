@@ -1,15 +1,17 @@
 import Keyword from "../Keyword";
 
 export default class KwAccept extends Keyword {
-  shouldMatch = ["accept", "Accept"];
+  shouldMatch = ["accept", "Accept", "accepted", "Accepted"];
   shouldNotMatch = ["acccept"];
-  check(name: string): boolean {
-    return name.toLowerCase() === "accept";
+
+  check(input: string): boolean {
+    input = input.toLowerCase()
+    return input === "accept" || input === "accepted";
   }
 
-  getColored(name: string): string {
-    if (this.check(name)) {
-      return this.color.greenBright(name);
+  getColored(input: string): string {
+    if (this.check(input)) {
+      return this.color.greenBright(input);
     } else {
       return "";
     }

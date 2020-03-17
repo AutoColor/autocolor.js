@@ -1,15 +1,16 @@
 import Keyword from "../Keyword";
 
 export default class KwFail extends Keyword {
-  shouldMatch = ["fail", "Fail"];
+  shouldMatch = ["fail", "Fail", "failed", "Failed"];
   shouldNotMatch = ["fai"];
-  check(name: string): boolean {
-    return name.toLowerCase() === "fail";
+  check(input: string): boolean {
+    input = input.toLowerCase()
+    return input === "fail" || input === "failed";
   }
 
-  getColored(name: string): string {
-    if (this.check(name)) {
-      return this.color.redBright(name);
+  getColored(input: string): string {
+    if (this.check(input)) {
+      return this.color.redBright(input);
     } else {
       return "";
     }

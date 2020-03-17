@@ -3,13 +3,13 @@ import Keyword from "../Keyword";
 export default class KwNo extends Keyword {
   shouldMatch = ["no", "No"];
   shouldNotMatch = ["nope", "none"];
-  check(name: string): boolean {
-    return name.toLowerCase() === "no";
+  check(input: string): boolean {
+    return input.toLowerCase() === "no";
   }
 
-  getColored(name: string): string {
-    if (this.check(name)) {
-      return this.color.redBright(name);
+  getColored(input: string): string {
+    if (this.check(input)) {
+      return this.color.redBright(input);
     } else {
       return "";
     }

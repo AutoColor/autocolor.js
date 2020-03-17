@@ -3,13 +3,13 @@ import Keyword from "../Keyword";
 export default class KwDeny extends Keyword {
   shouldMatch = ["deny", "Deny"];
   shouldNotMatch = ["denied", "den"];
-  check(name: string): boolean {
-    return name.toLowerCase() === "deny";
+  check(input: string): boolean {
+    return input.toLowerCase() === "deny";
   }
 
-  getColored(name: string): string {
-    if (this.check(name)) {
-      return this.color.yellowBright(name);
+  getColored(input: string): string {
+    if (this.check(input)) {
+      return this.color.yellowBright(input);
     } else {
       return "";
     }

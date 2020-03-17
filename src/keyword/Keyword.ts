@@ -10,6 +10,6 @@ export default abstract class Keyword {
     this.color = chalk;
   }
 
-  abstract check(name: string): boolean;
-  abstract getColored(name: string): string;
+  abstract check(input: string): boolean;
+  abstract getColored(input: string): string;
 }

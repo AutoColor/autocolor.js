@@ -3,13 +3,13 @@ import Keyword from "../Keyword";
 export default class KwBlue extends Keyword {
   shouldMatch = ["blue", "Blue"];
   shouldNotMatch = ["blu", "blues"];
-  check(name: string): boolean {
-    return name.toLowerCase() === "blue";
+  check(input: string): boolean {
+    return input.toLowerCase() === "blue";
   }
 
-  getColored(name: string): string {
-    if (this.check(name)) {
-      return this.color.blueBright(name);
+  getColored(input: string): string {
+    if (this.check(input)) {
+      return this.color.blueBright(input);
     } else {
       return "";
     }
