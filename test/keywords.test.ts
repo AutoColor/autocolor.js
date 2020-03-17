@@ -9,9 +9,7 @@ for (const keyword of Keywords.getRegistered()) {
     test(`Keyword should change: ${match}`, () => {
       expect(AutoColor.getString(match).trimRight()).not.toBe(match)
     })
-  }
 
-  for (const match of keyword.shouldMatch) {
     test(`Keyword should check: ${match}`, () => {
       expect(keyword.check(match)).toBe(true)
     })
@@ -21,9 +19,7 @@ for (const keyword of Keywords.getRegistered()) {
     test(`Keyword should not change: ${noMatch}`, () => {
       expect(keyword.getColored(noMatch)).toBe("")
     })
-  }
 
-  for (const noMatch of keyword.shouldNotMatch) {
     test(`Keyword should not check: ${noMatch}`, () => {
       expect(keyword.check(noMatch)).toBe(false)
     })
