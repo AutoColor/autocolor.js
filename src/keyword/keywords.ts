@@ -15,7 +15,6 @@ import KwBlue from "./keywords/KwBlue";
 import KwCorrect from "./keywords/KwCorrect";
 import KwDelete from "./keywords/KwDelete";
 import KwFail from "./keywords/KwFail";
-import KwFinished from "./keywords/KwFinished";
 import KwGreen from "./keywords/KwGreen";
 import KwInfoWithColon from "./keywords/KwInfoWithColon";
 import KwMagenta from "./keywords/KwMagenta";
@@ -28,6 +27,7 @@ import KwWarningWithColon from "./keywords/KwWarningWithColon";
 import KwYellow from "./keywords/KwYellow";
 import KwYes from "./keywords/KwYes";
 import KwIpAddress from "./keywords/KwIpAddress";
+import KwFinish from "./keywords/KwFinish"
 
 export default class Keywords {
   private static registeredKeywords: Keyword[] = [
@@ -40,7 +40,7 @@ export default class Keywords {
     new KwError(),
     new KwErrorWithColon(),
     new KwFail(),
-    new KwFinished(),
+    new KwFinish(),
     new KwGreen(),
     new KwInfo(),
     new KwInfoWithColon(),
