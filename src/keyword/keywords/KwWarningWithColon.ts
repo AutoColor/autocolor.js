@@ -9,7 +9,7 @@ export default class KwWarningWithColon extends Keyword {
 
   getColored(input: string): string {
     if (this.check(input)) {
-      return this.color.bgYellow(this.color.whiteBright(input));
+      return this.color.bgYellow(this.color.red(input));
     } else {
       return "";
     }
