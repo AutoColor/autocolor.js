@@ -12,7 +12,14 @@ export default class KwRemove extends Keyword {
   shouldNotMatch = ["remov"];
   check(input: string): boolean {
     input = input.toLowerCase();
-    return input === "remove" || input === "Remove" || input == "removed" || input == "Removed" || input == "removing" || input == "Removing";
+    return (
+      input === "remove" ||
+      input === "Remove" ||
+      input == "removed" ||
+      input == "Removed" ||
+      input == "removing" ||
+      input == "Removing"
+    );
   }
 
   getColored(input: string): string {
