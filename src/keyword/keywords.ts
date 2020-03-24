@@ -28,6 +28,7 @@ import KwYellow from "./keywords/KwYellow";
 import KwYes from "./keywords/KwYes";
 import KwIpAddress from "./keywords/KwIpAddress";
 import KwFinish from "./keywords/KwFinish";
+import KwRemove from "./keywords/KwRemove";
 
 export default class Keywords {
   private static registeredKeywords: Keyword[] = [
@@ -59,7 +60,8 @@ export default class Keywords {
     new KwWarn(),
     new KwWarningWithColon(),
     new KwYellow(),
-    new KwYes()
+    new KwYes(),
+    new KwRemove()
   ];
 
   /**
